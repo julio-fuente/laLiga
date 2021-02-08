@@ -1,22 +1,40 @@
-import './App.css';
+import React, { PureComponent } from 'react'
+
 import styled from 'styled-components';
 import Buttons from './components/Buttons';
-
+import { Container } from "@material-ui/core";
+import List from './views/listUser/ListaUser'
+import ModalLogin from "./views/login/Login";
+import AlertDialog from "./components/AlertDialog";
+import backgroundHome from "./assets/img/backgroundHome.jpg";
+import './App.css';
 
 
 function App() {
-
- // background: rgb(12, 27, 35);
   const Wrapper = styled.section`
   padding: 100%;
-`;
+  background: papayawhip;
+  `;
+  
+  const { body, setBody } = React.useState(true)
+
+  const openModalLogin = () => {
+    //this.ModalLogin.bind(this)
+  }
+  const onListUser = () => {
+    //setBody(<ListUser></ListUser>)
+  }
   return (
     <div>
-        <span>lolo</span>
-        <Buttons desc='Lista de Usuarios' type='secondary' clickHandler={()=>alert()}></Buttons>
-        <Buttons desc='Login' type='primary' clickHandler={()=>alert()}></Buttons>
-      <Wrapper>
-      </Wrapper>
+      <header>
+        <Buttons desc='Lista de Usuarios' type='secondary' clickHandler={onListUser}></Buttons>
+        <Buttons desc='Acceder' type='primary' clickHandler={openModalLogin}></Buttons>
+      </header>
+
+      <Container maxWidth="xl" className='containerButtons'>
+        {/* {body} */}
+        <List></List>
+      </Container>
     </div>
   );
 }

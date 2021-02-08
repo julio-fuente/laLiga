@@ -1,0 +1,61 @@
+import React from 'react';
+import { Modal, Button } from '@material-ui/core';
+
+
+const AlertDialog = (description, clickHandlerAcept) => {
+
+    const [open, setOpen] = React.useState(true);
+
+    const handleClickOpen = () => {
+
+    };
+
+    const handleClose = () => {
+      // setOpen(false);
+    };
+    return (
+        <>
+            <Modal
+                open='true'
+               // onClose={handleClose}
+                /* aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description" */
+            >
+                {description}
+
+               
+            </Modal>
+        </>
+        /* <div>
+            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+                Open alert dialog
+      </Button>
+            <Dialog
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+            >
+                <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+                <DialogContent>
+                    <DialogContentText id="alert-dialog-description">
+                        Let Google help apps determine location. This means sending anonymous location data to
+                        Google, even when no apps are running.
+          </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose} color="primary">
+                        Disagree
+          </Button>
+                    <Button onClick={handleClose} color="primary" autoFocus>
+                        Agree
+          </Button>
+                </DialogActions>
+            </Dialog>
+        </div> */
+    );
+
+}
+export default AlertDialog
+
+

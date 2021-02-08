@@ -8,7 +8,7 @@ import Proptype from 'prop-types';
 const Buttons = ({ desc, type, clickHandler }) => {
 
     return (
-        <Button color={type}onClick={clickHandler}>
+        <Button variant="contained" color={type}onClick={clickHandler}>
             {desc}
         </Button>
     )
