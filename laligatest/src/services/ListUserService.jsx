@@ -15,7 +15,7 @@ const putUser = (idUser, params) => {
 
 }
 export {
-          getListUser,    
+    getListUser,
     getDetailsUser,
     deleteUser,
     putUser
