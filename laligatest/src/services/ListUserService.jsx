@@ -12,10 +12,10 @@ const deleteUser = (idUser) => {
 }
 const putUser = (idUser, params) => {
     return restFull(`/users/${idUser}`, 'PUT', params)
-    
+
 }
 export {
-    getListUser,
+    getListUser   ,
     getDetailsUser,
     deleteUser,
     putUser
