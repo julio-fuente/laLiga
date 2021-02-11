@@ -1,1 +1,0 @@
-export const URLBASE = 'https://reqres.in/api'
