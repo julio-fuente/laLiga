@@ -12,7 +12,6 @@ import ModalEdit from './ModalEdit';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import '../../assets/styles/listaUser.scss';
-import '../../assets/styles/modals.scss';
 
 
 

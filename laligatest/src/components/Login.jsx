@@ -1,7 +1,6 @@
 import React from 'react'
 import { Formik, Field, Form, withFormik } from "formik";
 import axios from 'axios';
-import '../assets/styles/modals.scss'
 import { toast } from 'react-toastify';
 import { Modal } from 'react-bootstrap';
 
@@ -23,9 +22,6 @@ const Login = ({ handleSubmit, errors, show, onHide }) => {
                     autoClose: 5000,
                 });
             })
-    }
-    const closeButton =()=>{
-        onHide()
     }
     return (
         <Modal show={show} id='login' centered>

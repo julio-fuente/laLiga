@@ -4,7 +4,6 @@ import { getSaveUser } from '../../store/User/reducer';
 import Proptype from 'prop-types';
 import { Formik, Field, Form, withFormik } from "formik";
 import { Modal } from 'react-bootstrap';
-import '../../assets/styles/modals.scss'
 
 const ModalEdit = ({ getSaveUser, show, onHide, upDateUser }) => {
     const user = getSaveUser

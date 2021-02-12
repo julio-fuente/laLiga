@@ -3,8 +3,6 @@ import Proptype from 'prop-types';
 import WarningIcon from '@material-ui/icons/Warning';
 import * as constant from '../../consts/consts';
 import { Modal } from 'react-bootstrap';
-import '../../assets/styles/modals.scss'
-
 const ModalAlert = ({ show, onHide, onDelete }) => {
 
     return (

@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { getSaveUser } from '../../store/User/reducer'
 import Proptype from 'prop-types';
 import { Modal } from 'react-bootstrap';
-import '../../assets/styles/modals.scss'
 
 const ModalDetail = ({ show, getSaveUser, onHide }) => {
     const user = getSaveUser
